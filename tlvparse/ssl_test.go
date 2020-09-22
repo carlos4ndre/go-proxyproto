@@ -3,7 +3,7 @@ package tlvparse
 import (
 	"testing"
 
-	"github.com/pires/go-proxyproto"
+	"github.com/carlos4ndre/go-proxyproto"
 )
 
 var testCases = []struct {
