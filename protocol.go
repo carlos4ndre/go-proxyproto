@@ -44,7 +44,7 @@ func ValidateHeader(v Validator) func(*Conn) {
 }
 
 // Accept waits for and returns the next connection to the listener.
-func (p *Listener) Accept() (net.Conn, error) {
+func (p *Listener) Accept() (*Conn, error) {
 	// Get the underlying connection
 	conn, err := p.Listener.Accept()
 	if err != nil {
